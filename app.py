@@ -47,7 +47,7 @@ def _point_value(point, key, fallback=None):
 # LOAD DATA
 # =========================
 
-file_path = "Data/Nassau Candy Distributor (2).csv"
+file_path = "Nassau Candy Distributor (2).csv"
 df = pd.read_csv(file_path)
 df["Order Date"] = pd.to_datetime(df["Order Date"], format="mixed", dayfirst=True)
 df["Ship Date"] = pd.to_datetime(df["Ship Date"], format="mixed", dayfirst=True)
